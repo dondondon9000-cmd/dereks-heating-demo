@@ -58,6 +58,7 @@ const home = page({
         furnace, and heat pump systems across Franklin and Gasconade County.
         Certified technicians, straight answers, and financing available.
       </p>
+      <div class="weather-hook" data-weather aria-live="polite"></div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="${SITE.phoneHref}">${icon("phone")} Call ${SITE.phoneDisplay}</a>
         <a class="btn btn-on-dark" href="contact.html">Request an Appointment</a>
@@ -90,6 +91,23 @@ const home = page({
             team you can trust in your home. We handle furnace repair and
             installation for every major brand, done right the first time.</p>
           <a class="btn btn-secondary" href="furnace-repair-installation.html">Furnace Services ${icon("arrowRight")}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Not Sure What You Need?</span>
+        <h2>Answer Two Quick Questions</h2>
+        <p>Tell us what's going on and we'll point you to the right next step.</p>
+      </div>
+      <div class="quiz-card">
+        <div data-quiz>
+          <noscript>
+            <p>Enable JavaScript to use this tool, or <a href="services.html">browse our services</a> directly.</p>
+          </noscript>
         </div>
       </div>
     </div>
