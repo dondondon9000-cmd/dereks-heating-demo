@@ -572,25 +572,66 @@ const contact = page({
 // REVIEWS
 // ---------------------------------------------------------------------
 
-const SAMPLE_REVIEWS = [
+const CUSTOMER_REVIEWS = [
   {
-    quote: "Sample review placeholder — real customer feedback will replace this before launch.",
-    author: "Placeholder — Union, MO",
+    quote:
+      "Derek did an amazing job. He was able to come out right away and checked out everything we were worried about. He walked me through and explained everything so I knew what was going on and why.",
+    author: "Michelle Johnson",
+    date: "December 2025",
   },
   {
-    quote: "Sample review placeholder — pulled from Google Business Profile once available.",
-    author: "Placeholder — New Haven, MO",
+    quote:
+      "100% recommend!! Derek did an outstanding job on our AC unit. He went out of his way to take care of us and it's evident he cares for his customers. Thank you, Derek!",
+    author: "Steph Scroggins",
+    date: "June 2025",
   },
   {
-    quote: "Sample review placeholder — Derek to provide real testimonials.",
-    author: "Placeholder — Hermann, MO",
+    quote: "Competent. Efficient service. Would recommend!",
+    author: "Mary Fox",
+    date: "June 2025",
+  },
+  {
+    quote:
+      "Highly recommended these guys! They were friendly, professional and knowledgeable! They fixed the blowers on our fireplace!",
+    author: "Jolie Johnson",
+    date: "November 2024",
+  },
+  {
+    quote:
+      "Reached out to Derek's Heating and Cooling via text and Derek responded immediately. Within 2 hours Derek stopped by and fixed my GFCI outlet. He is quick, caring, and reasonably priced.",
+    author: "Cherie Dukes",
+    date: "September 2024",
+  },
+  {
+    quote:
+      "Amazing! Derek came out within 12 hours of me contacting him (contacted around 9pm the night before) and had us up and going by 8:45am. Affordable, professional, and will be using him for years to come!",
+    author: "Ashley Flahardy",
+    date: "April 2024",
+  },
+  {
+    quote:
+      "He's definitely the best around! We had him do all new mini splits and electrical in our addition. Very easy to work with. Excellent service.",
+    author: "Caleb McCord",
+    date: "January 2024",
+  },
+  {
+    quote:
+      "He showed up same day when others were pushing me off for several days. Courteous and helpful. Highly recommend.",
+    author: "Shelly Michelson",
+    date: "August 2022",
+  },
+  {
+    quote:
+      "Derek is great to work with. He's prompt, courteous, and reasonably-priced. He fixed many issues we were having with a water heater that a Big-Named Company messed up and he was half the price.",
+    author: "Adrienne Folta Bailey",
+    date: "April 2022",
   },
 ];
 
 const reviews = page({
   title: "Reviews | Derek's Heating, Cooling & Electrical LLC",
   description:
-    "See what customers say about Derek's Heating, Cooling & Electrical LLC in Union, MO.",
+    "100% recommended on Facebook. See what customers say about Derek's Heating, Cooling & Electrical LLC in Union, MO.",
   activeHref: "reviews.html",
   path: "reviews.html",
   body: `
@@ -598,29 +639,28 @@ const reviews = page({
     <div class="container">
       ${breadcrumb("Reviews")}
       <h1>What Union-Area Homeowners Say</h1>
-      <p>We're proud of the work we do. Here's what customers have to say
-        &mdash; real reviews will be added here once provided by Derek's
-        team or pulled from Google Business Profile.</p>
+      <p>We're proud of the work we do &mdash; here's what customers have
+        said about Derek's Heating, Cooling &amp; Electrical on Facebook.</p>
     </div>
   </section>
 
   <section class="section section-alt">
     <div class="container">
-      <p style="text-align:center;color:var(--ink-500);font-size:0.85rem;margin-bottom:var(--space-3);">
-        The cards below are placeholders for layout purposes only and do not represent real customer feedback.
+      <p style="text-align:center;color:var(--navy-900);font-weight:700;margin-bottom:var(--space-3);">
+        100% Recommend &middot; ${CUSTOMER_REVIEWS.length} Reviews on Facebook
       </p>
       <div class="review-grid">
-        ${SAMPLE_REVIEWS.map(
+        ${CUSTOMER_REVIEWS.map(
           (r) => `
         <div class="review-card">
-          <div class="stars" aria-label="Placeholder rating">${icon("star", { filled: true })}${icon("star", { filled: true })}${icon("star", { filled: true })}${icon("star", { filled: true })}${icon("star", { filled: true })}</div>
+          <div class="stars" aria-label="Recommended">${icon("star", { filled: true })}${icon("star", { filled: true })}${icon("star", { filled: true })}${icon("star", { filled: true })}${icon("star", { filled: true })}</div>
           <p class="review-quote">&ldquo;${r.quote}&rdquo;</p>
-          <p class="review-author">${r.author}</p>
+          <p class="review-author">${r.author} &middot; ${r.date}</p>
         </div>`
         ).join("")}
       </div>
       <div class="review-cta" style="margin-top:var(--space-5);">
-        <a class="btn btn-primary" href="${SITE.facebook}" target="_blank" rel="noopener noreferrer">${icon("facebook")} See Us on Facebook</a>
+        <a class="btn btn-primary" href="${SITE.facebook}" target="_blank" rel="noopener noreferrer">${icon("facebook")} See All Reviews on Facebook</a>
       </div>
     </div>
   </section>
