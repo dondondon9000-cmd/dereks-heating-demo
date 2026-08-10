@@ -244,6 +244,26 @@ const about = page({
   <section class="section">
     <div class="container">
       <div class="feature-row">
+        <div class="panel" style="padding:0;overflow:hidden;aspect-ratio:2/3;align-self:start;">
+          <img src="assets/img/derek-headshot.webp" alt="Derek, owner of Derek's Heating, Cooling & Electrical LLC" style="display:block;width:100%;height:100%;object-fit:cover;" width="700" height="1050">
+        </div>
+        <div>
+          <span class="kicker">Meet Derek</span>
+          <h2>Owner-Operator, On Every Job</h2>
+          <p>Derek's Heating, Cooling &amp; Electrical LLC is built on one
+            simple idea: the person who owns the company should be the one
+            you can trust to get the work right. Derek and his team bring
+            that same standard to every home in Union, New Haven, Hermann,
+            and the surrounding area.</p>
+          <a class="btn btn-secondary" href="${SITE.phoneHref}">${icon("phone")} Call ${SITE.phoneDisplay}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="feature-row">
         <div>
           <span class="kicker">Our Approach</span>
           <h2>Correct Installs. Proper Repairs. Outstanding Service.</h2>
