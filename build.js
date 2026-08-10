@@ -180,13 +180,14 @@ function mobileNav(activeHref) {
       const sub = item.dropdown
         .map((d) => `<a href="${d.href}">${d.label}</a>`)
         .join("");
+      const current = item.href === activeHref ? ' aria-current="page"' : "";
       return `
         <button
           type="button"
           class="mobile-nav-toggle-btn"
           data-mobile-sub-toggle
           aria-expanded="false"
-          aria-controls="mobile-services-sub"
+          aria-controls="mobile-services-sub"${current}
         >
           Services ${icon("chevronDown", { cls: "caret" })}
         </button>

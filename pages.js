@@ -480,7 +480,7 @@ const financing = page({
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section-alt">
     <div class="container">
       <div class="finance-highlights">
         <div class="finance-highlight">
@@ -604,7 +604,7 @@ const reviews = page({
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section-alt">
     <div class="container">
       <p style="text-align:center;color:var(--ink-500);font-size:0.85rem;margin-bottom:var(--space-3);">
         The cards below are placeholders for layout purposes only and do not represent real customer feedback.

@@ -196,12 +196,6 @@ p {
   width: 100%;
 }
 
-.btn svg {
-  width: 1.1em;
-  height: 1.1em;
-  flex: none;
-}
-
 /* ---------- Top bar ---------- */
 
 .topbar {
@@ -416,6 +410,10 @@ p {
   color: var(--navy-900);
 }
 
+.mobile-nav-link[aria-current="page"] {
+  color: var(--orange-600);
+}
+
 .mobile-sub {
   display: none;
   padding-left: var(--space-2);
@@ -456,6 +454,10 @@ p {
 
 .mobile-nav-toggle-btn[aria-expanded="true"] .caret {
   transform: rotate(180deg);
+}
+
+.mobile-nav-toggle-btn[aria-current="page"] {
+  color: var(--orange-600);
 }
 
 .mobile-cta {
@@ -631,11 +633,6 @@ p {
   max-width: 680px;
   margin: 0 auto var(--space-4);
   text-align: center;
-}
-
-.section-head.align-left {
-  margin-left: 0;
-  text-align: left;
 }
 
 .kicker {
@@ -1129,6 +1126,7 @@ p {
 }
 
 .finance-highlight {
+  background: #fff;
   padding: var(--space-3);
   border-radius: var(--radius-md);
   border: 1px solid var(--line-200);
@@ -1279,10 +1277,6 @@ p {
 
 .mt-0 {
   margin-top: 0;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .stack {
