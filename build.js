@@ -142,7 +142,7 @@ function topbar() {
 function brandMark() {
   return `
       <a class="brand" href="index.html">
-        <span class="brand-mark">${icon("snowflake")}</span>
+        <span class="brand-mark"><img src="assets/img/logo-mark.png" alt="" width="24" height="24"></span>
         <span class="brand-name">
           Derek's Heating, Cooling &amp; Electrical
           <small>Union, MO &middot; Licensed &amp; Insured</small>
@@ -249,7 +249,7 @@ function footer() {
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html">
-            <span class="brand-mark">${icon("snowflake")}</span>
+            <span class="brand-mark"><img src="assets/img/logo-mark.png" alt="" width="24" height="24"></span>
             <span class="brand-name">Derek's Heating, Cooling &amp; Electrical</span>
           </a>
           <p>Full-service heating, cooling and electrical for Union, MO and
@@ -362,7 +362,7 @@ function page({ title, description, activeHref, path: pagePath, body, extraSchem
 <meta name="description" content="${description}">
 <link rel="canonical" href="${canonical}">
 <meta name="theme-color" content="#0a2338">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
