@@ -12,8 +12,12 @@ See `BUILD_SPEC.md` for the full brief this was built against.
 - 10 pages, all built: Home, About, Services (hub), AC / Furnace / Heat
   Pump / Indoor Air Quality (service detail), Financing, Contact, Reviews.
 - Zero runtime dependencies: no framework, no CSS/JS libraries, no web
-  fonts (system font stack), no images yet (icons are inline SVG
-  placeholders — see "Placeholders to swap" below).
+  fonts (system font stack).
+- Real icon set in place (`assets/img/icons/`, 14 transparent PNGs,
+  recolored to the site's orange accent) for AC/furnace/heat pump/IAQ,
+  install/repair, financing, phone/email/address, and the two
+  certification badges. Generic UI chrome (menu, dropdown caret, arrows,
+  the Facebook glyph) stays inline SVG — see `PNG_ICONS` in `build.js`.
 - Home page fully loads in **4 requests / ~50KB** (html + css + js +
   favicon) with no render-blocking third-party requests.
 - Schema.org `HVACBusiness` structured data on every page.
@@ -52,9 +56,6 @@ python3 -m http.server 8000
 
 ## Placeholders to swap before this goes live
 
-- **Icons**: inline SVG line-icon placeholders (snowflake, flame, wind,
-  droplet, etc. in `build.js`'s `ICONS` object). Swap for the supplied
-  transparent-background PNG icon set once Derek provides it.
 - **Logo**: header/footer currently render a dark rounded square with the
   snowflake glyph as the brand mark (`brandMark()` in `build.js`). Swap
   for the real logo image once the cleaned-up vector version is ready.

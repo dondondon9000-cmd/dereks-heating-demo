@@ -278,7 +278,8 @@ p {
   flex: none;
 }
 
-.brand-mark svg {
+.brand-mark svg,
+.brand-mark img {
   width: 24px;
   height: 24px;
 }
@@ -557,7 +558,8 @@ p {
   gap: 0.5rem;
 }
 
-.hero-trust svg {
+.hero-trust svg,
+.hero-trust img {
   width: 1.15em;
   height: 1.15em;
   color: var(--orange-600);
@@ -656,7 +658,8 @@ p {
   margin-bottom: var(--space-2);
 }
 
-.feature-icon svg {
+.feature-icon svg,
+.feature-icon img {
   width: 30px;
   height: 30px;
   color: var(--orange-600);
@@ -694,7 +697,8 @@ p {
   height: 46px;
 }
 
-.card .feature-icon svg {
+.card .feature-icon svg,
+.card .feature-icon img {
   width: 24px;
   height: 24px;
 }
@@ -790,7 +794,8 @@ p {
   font-size: 0.92rem;
 }
 
-.cert-badge svg {
+.cert-badge svg,
+.cert-badge img {
   width: 26px;
   height: 26px;
   color: var(--orange-600);
@@ -926,7 +931,8 @@ p {
   padding: var(--space-3);
 }
 
-.info-card svg {
+.info-card svg,
+.info-card img {
   width: 26px;
   height: 26px;
   color: var(--orange-600);
@@ -1104,7 +1110,8 @@ p {
   font-size: 0.92rem;
 }
 
-.footer-contact svg {
+.footer-contact svg,
+.footer-contact img {
   width: 1.1em;
   height: 1.1em;
   flex: none;
@@ -1135,7 +1142,8 @@ p {
   color: #dfe9f2;
 }
 
-.footer-cert-badge svg {
+.footer-cert-badge svg,
+.footer-cert-badge img {
   width: 16px;
   height: 16px;
   color: var(--orange-600);

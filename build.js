@@ -28,10 +28,26 @@ const SITE = {
 };
 
 // ---------------------------------------------------------------------
-// Icons -- small inline SVGs, no icon font / external requests.
-// Placeholder set: swap for the supplied transparent PNG icon set later
-// (see README.md) by replacing the icon() calls' output with <img> tags.
+// Icons. Content/brand icons render from the real transparent-PNG set
+// (assets/img/icons/) supplied by Derek's team; generic interface chrome
+// (menu, chevron, arrow, checkmarks, Facebook glyph) stays inline SVG.
 // ---------------------------------------------------------------------
+
+const PNG_ICONS = {
+  snowflake: "snowflake.png",
+  flame: "flame.png",
+  wind: "fan.png",
+  droplet: "droplet.png",
+  wrench: "wrench.png",
+  clipboard: "clipboard.png",
+  dollar: "dollar.png",
+  phone: "phone.png",
+  mail: "mail.png",
+  pin: "pin.png",
+  shield: "shield.png",
+  checkCircle: "check-circle.png",
+  clock: "clock.png",
+};
 
 const ICONS = {
   phone:
@@ -75,6 +91,9 @@ const ICONS = {
 function icon(name, opts) {
   opts = opts || {};
   const cls = ["icon", opts.cls].filter(Boolean).join(" ");
+  if (PNG_ICONS[name] && !opts.forceSvg) {
+    return `<img class="${cls}" src="assets/img/icons/${PNG_ICONS[name]}" width="24" height="24" alt="" aria-hidden="true">`;
+  }
   const filled = opts.filled;
   return `<svg class="${cls}" viewBox="0 0 24 24" fill="${
     filled ? "currentColor" : "none"
