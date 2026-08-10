@@ -162,6 +162,66 @@ const home = page({
 });
 
 // ---------------------------------------------------------------------
+// WORK GALLERY (real job photos, About page)
+// ---------------------------------------------------------------------
+
+const WORK_PHOTOS = [
+  { src: "furnace-install-1.webp", alt: "Furnace and air handler installed in a basement mechanical closet", caption: "Furnace & Air Handler Install" },
+  { src: "water-heater-softener.webp", alt: "New water heater and water softener installed side by side", caption: "Water Heater & Softener Install" },
+  { src: "dual-condensers-stone.webp", alt: "Two AC condenser units installed side by side outside a stone house", caption: "Dual AC System Install" },
+  { src: "heatpump-under-deck.webp", alt: "Heat pump condenser unit installed under a rear deck", caption: "Heat Pump Install" },
+  { src: "heatpump-siding.webp", alt: "Heat pump condenser unit installed against home siding", caption: "Heat Pump Install" },
+  { src: "commercial-rooftop-unit.webp", alt: "Commercial packaged HVAC unit installed on a flat rooftop", caption: "Commercial Rooftop Unit" },
+  { src: "air-handler-laundry.webp", alt: "Air handler and ductwork installed above a laundry room floor", caption: "Air Handler Install" },
+  { src: "ac-brick-exterior.webp", alt: "AC condenser unit installed against a brick exterior wall", caption: "AC Install" },
+  { src: "water-heater-basement.webp", alt: "Water heater installed in an unfinished basement", caption: "Water Heater Install" },
+];
+
+const WORK_BEFORE_AFTERS = [
+  {
+    before: "ac-replacement-before.webp",
+    after: "ac-replacement-after.webp",
+    caption: "AC Replacement",
+  },
+  {
+    before: "furnace-replacement-before.webp",
+    after: "furnace-replacement-after.webp",
+    caption: "Furnace Replacement",
+  },
+];
+
+function workGallery() {
+  const singles = WORK_PHOTOS.map(
+    (p) => `
+        <figure class="work-card">
+          <div class="work-photo">
+            <img src="assets/img/work/${p.src}" alt="${p.alt}" loading="lazy" width="900" height="675">
+          </div>
+          <figcaption>${p.caption}</figcaption>
+        </figure>`
+  ).join("");
+
+  const pairs = WORK_BEFORE_AFTERS.map(
+    (p) => `
+        <figure class="work-card work-card-ba">
+          <div class="work-ba">
+            <div class="work-photo">
+              <img src="assets/img/work/${p.before}" alt="${p.caption} — before" loading="lazy" width="540" height="660">
+              <span class="work-ba-tag">Before</span>
+            </div>
+            <div class="work-photo">
+              <img src="assets/img/work/${p.after}" alt="${p.caption} — after" loading="lazy" width="540" height="660">
+              <span class="work-ba-tag work-ba-tag-after">After</span>
+            </div>
+          </div>
+          <figcaption>${p.caption}</figcaption>
+        </figure>`
+  ).join("");
+
+  return `<div class="work-grid">${pairs}${singles}</div>`;
+}
+
+// ---------------------------------------------------------------------
 // ABOUT
 // ---------------------------------------------------------------------
 
@@ -212,6 +272,18 @@ const about = page({
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Our Work</span>
+        <h2>Recent Installs Around Franklin &amp; Gasconade County</h2>
+        <p>A look at real jobs &mdash; furnaces, AC systems, heat pumps, and
+          water heaters installed and repaired by our team.</p>
+      </div>
+      ${workGallery()}
     </div>
   </section>
 
