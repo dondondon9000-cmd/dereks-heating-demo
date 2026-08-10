@@ -575,7 +575,7 @@ const contact = page({
 const CUSTOMER_REVIEWS = [
   {
     quote:
-      "Derek did an amazing job. He was able to come out right away and checked out everything we were worried about. He walked me through and explained everything so I knew what was going on and why.",
+      "Derek did an amazing job. He was able to come out right away and checked out everything we were worried about. He walked me through and explained everything so I knew what was going on and why. Definitely recommend him and will use him for any future issues!",
     author: "Michelle Johnson",
     date: "December 2025",
   },
@@ -598,13 +598,13 @@ const CUSTOMER_REVIEWS = [
   },
   {
     quote:
-      "Reached out to Derek's Heating and Cooling via text and Derek responded immediately. Within 2 hours Derek stopped by and fixed my GFCI outlet. He is quick, caring, and reasonably priced.",
+      "Reached out to Derek's Heating and Cooling via text and Derek responded immediately. Within 2 hours Derek stopped by and fixed my GFCI outlet. He is quick, caring, and reasonably priced. Definitely will go to him for any future issues! Thanks again!!",
     author: "Cherie Dukes",
     date: "September 2024",
   },
   {
     quote:
-      "Amazing! Derek came out within 12 hours of me contacting him (contacted around 9pm the night before) and had us up and going by 8:45am. Affordable, professional, and will be using him for years to come!",
+      "Amazing! Derek came out within 12 hours of me contacting him (contacted around 9pm the night before) and had us up and going by 8:45am. Affordable, professional, and will be using him for years to come! Can't thank him enough for his amazing work and getting this taken care of for us. He also has other lines of business we discussed so will be recommending him any chance we can.",
     author: "Ashley Flahardy",
     date: "April 2024",
   },
@@ -622,7 +622,7 @@ const CUSTOMER_REVIEWS = [
   },
   {
     quote:
-      "Derek is great to work with. He's prompt, courteous, and reasonably-priced. He fixed many issues we were having with a water heater that a Big-Named Company messed up and he was half the price.",
+      "Derek is great to work with. He's prompt, courteous, and reasonably-priced. He fixed many issues we were having with a water heater that a Big-Named Company messed up and he was half the price. I have his number stored in my phone and know I can text him anytime we have issues. I highly recommend giving Derek a call.",
     author: "Adrienne Folta Bailey",
     date: "April 2022",
   },
