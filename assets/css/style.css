@@ -489,18 +489,6 @@ p {
   overflow: hidden;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    600px 400px at 85% 20%,
-    rgba(224, 90, 31, 0.25),
-    transparent 60%
-  );
-  pointer-events: none;
-}
-
 .hero-inner {
   position: relative;
   display: grid;
